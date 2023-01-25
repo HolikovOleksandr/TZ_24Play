@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] Vector3 _targetPosition;
+    [SerializeField] float _stepSpeed;
 
     [SerializeField] float _moveSpeed;
 
@@ -14,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {   
-        _targetPosition.z = transform.position.z + _positionOffset;
+        _targetPosition.z = transform.position.z + _stepSpeed;
         _targetPosition.z += _moveSpeed;
     }
 
