@@ -4,7 +4,7 @@ public class GroundSpawn : MonoBehaviour
 {
     [SerializeField] GameObject _platformPrefab;
 
-    const float NEXT_PLATFORM_RANGE = 120f;
+    const float NEXT_PLATFORM_RANGE = 300f;
 
     private void OnTriggerEnter(Collider other)
     {
