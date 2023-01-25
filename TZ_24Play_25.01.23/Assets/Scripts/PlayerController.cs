@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] Vector3 _targetPosition;
+
     [SerializeField] float _moveSpeed;
 
     [SerializeField] float _positionOffset;
@@ -11,22 +13,21 @@ public class PlayerController : MonoBehaviour
     [SerializeField] KeyCode _rightStepKey;
 
     private void FixedUpdate()
-    {
-        Vector3 position = transform.position;
-
-        position.z += _moveSpeed;
-        transform.position = position;   
+    {   
+        _targetPosition.z = transform.position.z + _positionOffset;
+        _targetPosition.z += _moveSpeed;
     }
 
     private void Update() 
     {
-        Vector3 position = transform.position;
+        if(Input.GetKeyDown(_leftStepKey)) 
+            _targetPosition.x -= _positionOffset;
 
-        if(Input.GetKeyDown(_leftStepKey)) position.x -= _positionOffset;
-        else if(Input.GetKeyDown(_rightStepKey)) position.x += _positionOffset;
+        else if(Input.GetKeyDown(_rightStepKey)) 
+            _targetPosition.x += _positionOffset;
 
-        position.x = Mathf.Clamp(position.x, -_sideLinesCount, _sideLinesCount);
+        _targetPosition.x = Mathf.Clamp(_targetPosition.x, -_sideLinesCount, _sideLinesCount);
 
-        transform.position = position;
+        transform.position = Vector3.MoveTowards(transform.position, _targetPosition, _moveSpeed);
     }
 }

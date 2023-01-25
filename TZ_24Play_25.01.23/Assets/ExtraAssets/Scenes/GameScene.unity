@@ -440,7 +440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab59710f79f6ca8469ddaf9983a7a486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 0.5
+  _targetPosition: {x: 0, y: 1.5, z: -3}
+  _moveSpeed: 0.1
   _positionOffset: 1
   _sideLinesCount: 2
   _leftStepKey: 97
