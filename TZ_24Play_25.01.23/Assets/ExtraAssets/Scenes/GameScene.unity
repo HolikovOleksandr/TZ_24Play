@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 93651474}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,7 +168,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platforms:
-  - {fileID: 0}
+  - {fileID: 2061252132455739270, guid: 8017c09699194034b9e3b478d1950c84, type: 3}
+  - {fileID: 2061252132455739270, guid: 61a4accd1c991c14d95b67ccac05576b, type: 3}
+  - {fileID: 2061252132455739270, guid: b6f35f54f659519448c71fface4dc315, type: 3}
+  - {fileID: 2061252132455739270, guid: cdc69b156659dae4b94f43ff4288bab3, type: 3}
+  - {fileID: 2061252132455739270, guid: 1670f0740ff0e4d49894e25392a088c6, type: 3}
+  - {fileID: 2061252132455739270, guid: d692644cea074b846ba7a179522dbf93, type: 3}
+  - {fileID: 2061252132455739270, guid: 6069bc87828850544855c7d48df188af, type: 3}
 --- !u!1 &362227220
 GameObject:
   m_ObjectHideFlags: 0

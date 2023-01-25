@@ -2,19 +2,24 @@ using UnityEngine;
 
 public class GroundSpawn : MonoBehaviour
 {
-    [SerializeField] GameObject _platformPrefab;
+    GameManager _gameManager;
 
     const float NEXT_PLATFORM_RANGE = 300f;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
-        // if(other.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("Player"))
         {
             Vector3 spawnPosition = transform.position;
             spawnPosition.z += NEXT_PLATFORM_RANGE;
-            Instantiate(_platformPrefab, spawnPosition, Quaternion.identity, null);
 
+            Instantiate
+            (
+                _gameManager.platforms[Random.Range(0, _gameManager.platforms.Length)], 
+                spawnPosition, 
+                Quaternion.identity, 
+                null
+            );
             Destroy(gameObject);
         }    
     }
