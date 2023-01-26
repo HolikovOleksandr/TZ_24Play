@@ -4,14 +4,19 @@ public class GroundSpawn : MonoBehaviour
 {
     GameManager _gameManager;
 
-    const float NEXT_PLATFORM_RANGE = 300f;
+    [SerializeField] float _nextSpawnPlatformRange;
+
+    private void Start()
+    {
+        _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();    
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Player"))
         {
             Vector3 spawnPosition = transform.position;
-            spawnPosition.z += NEXT_PLATFORM_RANGE;
+            spawnPosition.z += _nextSpawnPlatformRange;
 
             Instantiate
             (

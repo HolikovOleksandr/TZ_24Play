@@ -124,4 +124,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30f8d08417ab79649965ffb27f2fcde6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _platformPrefab: {fileID: 2061252132455739270}
+  _nextSpawnPlatformRange: 200
