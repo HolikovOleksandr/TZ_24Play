@@ -4,7 +4,7 @@ public class GroundSpawn : MonoBehaviour
 {
     GameManager _gameManager;
 
-    [SerializeField] float _nextSpawnPlatformRange;
+    [SerializeField] float _nextSpawnPlatformDistance;
 
     private void Start()
     {
@@ -16,7 +16,7 @@ public class GroundSpawn : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             Vector3 spawnPosition = transform.position;
-            spawnPosition.z += _nextSpawnPlatformRange;
+            spawnPosition.z += _nextSpawnPlatformDistance;
 
             Instantiate
             (

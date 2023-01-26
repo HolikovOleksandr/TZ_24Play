@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180958320872394186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30f8d08417ab79649965ffb27f2fcde6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nextSpawnPlatformRange: 200
+  _nextSpawnPlatformDistance: 250
 --- !u!1001 &319242478770766082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -218,30 +218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
@@ -313,30 +293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
@@ -408,30 +368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
@@ -503,30 +443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
@@ -598,30 +518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall (13)
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
@@ -700,21 +600,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7499209467646926844, guid: 085ad57d0f0d5924f8ec77fd5eeb27f9,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7499209467646926844, guid: 085ad57d0f0d5924f8ec77fd5eeb27f9,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7499209467646926844, guid: 085ad57d0f0d5924f8ec77fd5eeb27f9,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7499209467646926844, guid: 085ad57d0f0d5924f8ec77fd5eeb27f9,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.14915153
       objectReference: {fileID: 0}
@@ -783,30 +668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall (12)
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
@@ -878,30 +743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall (11)
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
@@ -973,30 +818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
@@ -1068,30 +893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
@@ -1163,30 +968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall (10)
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
@@ -1258,30 +1043,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
@@ -1360,21 +1125,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7499209467646926844, guid: 085ad57d0f0d5924f8ec77fd5eeb27f9,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7499209467646926844, guid: 085ad57d0f0d5924f8ec77fd5eeb27f9,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7499209467646926844, guid: 085ad57d0f0d5924f8ec77fd5eeb27f9,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7499209467646926844, guid: 085ad57d0f0d5924f8ec77fd5eeb27f9,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.1491516
       objectReference: {fileID: 0}
@@ -1443,30 +1193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
@@ -1545,21 +1275,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7499209467646926844, guid: 085ad57d0f0d5924f8ec77fd5eeb27f9,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7499209467646926844, guid: 085ad57d0f0d5924f8ec77fd5eeb27f9,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7499209467646926844, guid: 085ad57d0f0d5924f8ec77fd5eeb27f9,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7499209467646926844, guid: 085ad57d0f0d5924f8ec77fd5eeb27f9,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.1491513
       objectReference: {fileID: 0}
@@ -1628,30 +1343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
@@ -1723,30 +1418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeWall (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 3298146576256067614, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barrier
-      objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8468905800350330301, guid: 52257005b6f33034eb2466fc67189036,
         type: 3}
