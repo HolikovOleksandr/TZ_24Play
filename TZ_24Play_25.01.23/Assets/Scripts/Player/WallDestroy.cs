@@ -17,4 +17,19 @@ public class WallDestroy : MonoBehaviour
             Destroy(gameObject);
         };
     }
+
+    // // Remove cube  :(
+    // private void OnCollisionEnter(Collision other)
+    // {
+    //     if(other.gameObject.tag == "Wall" && other.gameObject != null) 
+    //     {   
+    //         // listCubes.RemoveAt(listCubes.Count - 1);
+    //         // Destroy(gameObject.transform.GetChild(listCubes.Count - 1).gameObject);
+
+    //         if (gameObject.transform.GetChild(listCubes.Count - 1).gameObject.tag == "Player")
+    //             Destroy(gameObject.transform.GetChild(listCubes.Count - 1).gameObject);
+
+    //         // DestroyCube(gameObject);
+    //     };
+    // }
 }

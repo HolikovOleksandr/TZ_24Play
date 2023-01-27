@@ -14,14 +14,15 @@ public class CubeSpawner : MonoBehaviour
     {
         _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
-        // listCubes[0] = cubePrefab;
-
         CreateCube();
+        GameObject gameObject = Instantiate(cubePrefab, Vector3.zero, Quaternion.identity);
     }
 
     private void Update() 
     {
-        Invoke("ScoreLog", 1.5f);
+        Debug.Log(listCubes.Count);
+
+        if(listCubes.Count <= 0) _gameManager.LoadLevel();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -45,28 +46,4 @@ public class CubeSpawner : MonoBehaviour
         gameObject.transform.SetParent(transform);
         listCubes.Add(gameObject);
     }
-
-    private void ScoreLog()
-    {
-        Debug.Log(listCubes.Count);
-    }
-
-
-    // // Remove cube  :(
-    // private void OnCollisionEnter(Collision other)
-    // {
-    //     if(other.gameObject.tag == "Wall" && other.gameObject != null) 
-    //     {   
-    //         // listCubes.RemoveAt(listCubes.Count - 1);
-    //         // Destroy(gameObject.transform.GetChild(listCubes.Count - 1).gameObject);
-
-    //         if (gameObject.transform.GetChild(listCubes.Count - 1).gameObject.tag == "Player")
-    //             Destroy(gameObject.transform.GetChild(listCubes.Count - 1).gameObject);
-
-    //         // DestroyCube(gameObject);
-    //     };
-    // }
-
-
-
 }

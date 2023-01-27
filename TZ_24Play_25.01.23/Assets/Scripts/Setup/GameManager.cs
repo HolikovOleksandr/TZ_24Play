@@ -1,18 +1,18 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject[] platforms; // Migrate this to platform spawner
 
-    CubeSpawner _cubes;
 
-    private void Start()
+    public void LoadLevel()
     {
-        _cubes = GameObject.FindGameObjectWithTag("CubeSpawner").GetComponent<CubeSpawner>();    
+        SceneManager.LoadScene("GameScene");
     }
 
-    public void RestartLevel()
+    public void Exit()
     {
-        Debug.Log("YOU LOSE!");
+        Application.Quit();
     }
 }
