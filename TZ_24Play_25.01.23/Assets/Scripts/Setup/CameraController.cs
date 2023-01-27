@@ -6,7 +6,6 @@ public class CameraController : MonoBehaviour
     [SerializeField] Transform _player;
     
     [Header("Position Offset")]
-    [SerializeField] float _xPositionOffset;
     [SerializeField] float _yPositionOffset;
     [SerializeField] float _zPositionOffset;
     
@@ -18,7 +17,7 @@ public class CameraController : MonoBehaviour
     {        
         transform.position = new Vector3
         (
-            _player.position.x + _xPositionOffset, // Not happy with it
+            transform.position.x, 
             _player.position.y + _yPositionOffset,
             _player.position.z + _zPositionOffset
         ); 

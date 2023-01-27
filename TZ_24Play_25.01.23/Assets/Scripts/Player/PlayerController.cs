@@ -2,14 +2,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] Vector3 _targetPosition;
-    [SerializeField] float _stepSpeed;
+    Vector3 _targetPosition;
 
+    [SerializeField] float _stepSpeed;
     [SerializeField] float _moveSpeed;
 
     [SerializeField] float _positionOffset;
     [SerializeField] float _sideLinesCount;
 
+    // It will stay here until I make a slide move
     [SerializeField] KeyCode _leftStepKey;
     [SerializeField] KeyCode _rightStepKey;
 
@@ -17,6 +18,9 @@ public class PlayerController : MonoBehaviour
     {   
         _targetPosition.z = transform.position.z + _stepSpeed;
         _targetPosition.z += _moveSpeed;
+
+        _leftStepKey = KeyCode.A;
+        _rightStepKey = KeyCode.D;
     }
 
     private void Update() 

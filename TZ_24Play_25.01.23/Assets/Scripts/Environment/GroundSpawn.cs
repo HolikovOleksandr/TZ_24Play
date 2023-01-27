@@ -13,7 +13,7 @@ public class GroundSpawn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("CubeSpawner"))
         {
             Vector3 spawnPosition = transform.position;
             spawnPosition.z += _nextSpawnPlatformDistance;
@@ -22,8 +22,7 @@ public class GroundSpawn : MonoBehaviour
             (
                 _gameManager.platforms[Random.Range(0, _gameManager.platforms.Length)], 
                 spawnPosition, 
-                Quaternion.identity, 
-                null
+                Quaternion.identity 
             );
             Destroy(gameObject);
         }    

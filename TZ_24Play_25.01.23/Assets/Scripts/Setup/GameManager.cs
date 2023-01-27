@@ -1,25 +1,18 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject[] platforms;
+    public GameObject[] platforms; // Migrate this to platform spawner
 
-    bool _gameEnded = false;
-    [SerializeField] float _restartWaitingTime;
+    CubeSpawner _cubes;
 
-    public void EndGame()
+    private void Start()
     {
-        if(_gameEnded == false)
-        {
-            _gameEnded = true;
-            Debug.Log("GAME OVER");
-            Invoke("Restart", _restartWaitingTime);
-        }
+        _cubes = GameObject.FindGameObjectWithTag("CubeSpawner").GetComponent<CubeSpawner>();    
     }
 
-    public void Restart()
+    public void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("YOU LOSE!");
     }
 }

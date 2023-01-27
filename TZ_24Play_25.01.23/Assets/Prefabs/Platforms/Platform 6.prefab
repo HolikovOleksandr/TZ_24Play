@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 47465541924921512}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Barrier
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 4338848946081080263}
   m_Layer: 0
   m_Name: Bonuses
-  m_TagString: Bonus
+  m_TagString: Bonuse
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
