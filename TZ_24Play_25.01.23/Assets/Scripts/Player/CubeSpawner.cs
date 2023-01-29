@@ -15,14 +15,12 @@ public class CubeSpawner : MonoBehaviour
         _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         CreateCube();
-        GameObject gameObject = Instantiate(cubePrefab, Vector3.zero, Quaternion.identity);
     }
 
     private void Update() 
     {
-        Debug.Log(listCubes.Count);
-
-        if(listCubes.Count <= 0) _gameManager.LoadLevel();
+        if(listCubes.Count < 0) _gameManager.LoadLevel();
+        // Debug.Log(listCubes.Count);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -39,11 +37,11 @@ public class CubeSpawner : MonoBehaviour
     {
         Vector3 cubePosition = Vector3.zero;
 
-        if(listCubes.Count > 0 )
+        if(listCubes.Count > 0)
             cubePosition = listCubes[listCubes.Count - 1].transform.position + newPrefabPosition;
                    
         GameObject gameObject = Instantiate(cubePrefab, cubePosition, Quaternion.identity);
         gameObject.transform.SetParent(transform);
-        listCubes.Add(gameObject);
+        listCubes.Add(gameObject);                  
     }
 }
