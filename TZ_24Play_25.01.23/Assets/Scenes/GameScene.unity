@@ -173,7 +173,7 @@ MonoBehaviour:
   cubePrefab: {fileID: 3481367610352654943, guid: 3d5bf1242de7380409dfe7eba43a6525,
     type: 3}
   listCubes: []
-  _newCubeOffsetY: 1.1
+  _newCubeOffsetY: 1.01
 --- !u!54 &82910914
 Rigidbody:
   m_ObjectHideFlags: 0

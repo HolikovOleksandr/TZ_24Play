@@ -18,10 +18,8 @@ public class CubeSpawner : MonoBehaviour
 
     private void Update() 
     {
-        if(listCubes.Count == 0) _gameManager.LoadLevel();
+        if(listCubes.Count == 0) _gameManager.EndLevel();
         Invoke("DebugGameScore", 2.5f);
-
-        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,8 +29,13 @@ public class CubeSpawner : MonoBehaviour
             Destroy(other.gameObject);
             CreateCube();
         }
-        else if(other.gameObject.tag == "Wall") DestroyCube();
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.tag == "Wall") DestroyCube();
+    }
+
 
     private void CreateCube()
     {
