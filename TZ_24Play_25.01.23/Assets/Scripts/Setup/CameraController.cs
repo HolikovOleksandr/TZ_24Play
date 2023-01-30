@@ -2,36 +2,15 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    GameObject _target;
-    
-    [Header("Position Offset")]
-    [SerializeField] float _yPositionOffset;
-    [SerializeField] float _zPositionOffset;
-    
-    [Header("Rotation Offset")]
-    [SerializeField] float _xRotationOffset;
-    [SerializeField] float _yRotationOffset;
+    [SerializeField] Transform _target;
 
-    private void Start()
-    {
-        _target = GameObject.FindWithTag("CubeSpawner");    
-    }
+    [SerializeField] Vector3 _offsetPosition; 
+    [SerializeField] Vector3 _offsetRotation;
 
     private void Update()
-    {        
-        transform.position = new Vector3
-        (
-            transform.position.x, 
-            _target.transform.position.y + _yPositionOffset,
-            _target.transform.position.z + _zPositionOffset
-        ); 
-
-        Vector3 rotationOffset = new Vector3
-        (
-            _target.transform.rotation.x + _xRotationOffset,
-            _target.transform.rotation.y + _yRotationOffset
-        );    
-
-        transform.rotation = Quaternion.Euler(rotationOffset);
+    {
+        transform.position = _target.position + _offsetPosition;
+        transform.rotation = Quaternion.Euler( _offsetRotation);
     }
+    
 }

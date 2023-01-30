@@ -10,23 +10,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _positionOffset;
     [SerializeField] float _sideLinesCount;
 
-    Vector2 _currentPosition;
-
     Vector2 _startTouchPosition;
     Vector2 _endTouchPosition;
+    Vector2 _currentPosition;
 
     [SerializeField] float _swipeRange;
     [SerializeField] float _tapRange;
 
     bool _stopTouch;
-
-
-
-    private void FixedUpdate()
-    {   
-        _targetPosition.z = transform.position.z + _stepSpeed;
-        _targetPosition.z += _moveSpeed;
-    }
 
     private void Update() 
     {   
@@ -37,6 +28,11 @@ public class PlayerController : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, _targetPosition, _moveSpeed);
     }
 
+    private void FixedUpdate()
+    {   
+        _targetPosition.z = transform.position.z + _stepSpeed;
+        _targetPosition.z += _moveSpeed;
+    }
     
     public void SwipeMovement()
     {
@@ -54,13 +50,11 @@ public class PlayerController : MonoBehaviour
             {
                 if(distanse.x < -_swipeRange)
                 { 
-                    Debug.Log("LeftSwipe is worked!");
                     _stopTouch = true;
                     LeftStep();
                 }
                 else if(distanse.x > -_swipeRange)
                 { 
-                    Debug.Log("RightSwipe is worked!");
                     _stopTouch = true;
                     RightStep();
                 }
@@ -77,16 +71,8 @@ public class PlayerController : MonoBehaviour
 
     public void KeyboardMovement()
     {   
-        if(Input.GetKeyDown(KeyCode.A))
-        { 
-            Debug.Log("LeftKey is worked!");
-            LeftStep();
-        }
-        else if(Input.GetKeyDown(KeyCode.D)) 
-        {
-            Debug.Log("Left Swipe is worked!");
-            RightStep();
-        }
+        if(Input.GetKeyDown(KeyCode.A)) LeftStep();
+        else if(Input.GetKeyDown(KeyCode.D)) RightStep();
     }
 
     private void LeftStep()

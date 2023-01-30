@@ -8,19 +8,20 @@ public class CubeSpawner : MonoBehaviour
     public GameObject cubePrefab;
     public List<GameObject> listCubes = new List<GameObject>();
 
-    [SerializeField] Vector3 newPrefabPosition;
+    [SerializeField] float _newCubeOffsetY;
 
     private void Start()
     {
         _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-
         CreateCube();
     }
 
     private void Update() 
     {
-        if(listCubes.Count < 0) _gameManager.LoadLevel();
-        // Debug.Log(listCubes.Count);
+        if(listCubes.Count == 0) _gameManager.LoadLevel();
+        Invoke("DebugGameScore", 2.5f);
+
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -29,19 +30,31 @@ public class CubeSpawner : MonoBehaviour
         { 
             Destroy(other.gameObject);
             CreateCube();
-        } 
+        }
+        else if(other.gameObject.tag == "Wall") DestroyCube();
     }
 
-    // Added cube to list and created one more game object to stuck
     private void CreateCube()
     {
         Vector3 cubePosition = Vector3.zero;
+        if(listCubes.Count > 0) 
+        {
+            cubePosition = listCubes[listCubes.Count - 1].transform.position + new Vector3(0f, _newCubeOffsetY, 0f);
+        }
 
-        if(listCubes.Count > 0)
-            cubePosition = listCubes[listCubes.Count - 1].transform.position + newPrefabPosition;
-                   
         GameObject gameObject = Instantiate(cubePrefab, cubePosition, Quaternion.identity);
         gameObject.transform.SetParent(transform);
-        listCubes.Add(gameObject);                  
+        listCubes.Add(gameObject);                 
+    }
+
+    private void DestroyCube()
+    {
+        Destroy(listCubes[listCubes.Count - 1].gameObject);
+        listCubes.RemoveAt(listCubes.Count - 1);
+    }
+
+    private void DebugGameScore()
+    {
+        Debug.Log(listCubes.Count);
     }
 }
